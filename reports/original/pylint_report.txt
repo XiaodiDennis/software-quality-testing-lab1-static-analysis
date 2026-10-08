@@ -1,0 +1,19 @@
+************* Module sample_code
+sample_code.py:17:0: C0301: Line too long (168/100) (line-too-long)
+sample_code.py:11:0: C0116: Missing function or method docstring (missing-function-docstring)
+sample_code.py:11:0: C0103: Function name "CalculateTotal" doesn't conform to snake_case naming style (invalid-name)
+sample_code.py:11:26: C0103: Argument name "taxRate" doesn't conform to snake_case naming style (invalid-name)
+sample_code.py:21:0: C0116: Missing function or method docstring (missing-function-docstring)
+sample_code.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+sample_code.py:29:0: C0115: Missing class docstring (missing-class-docstring)
+sample_code.py:29:0: C0103: Class name "useraccount" doesn't conform to PascalCase naming style (invalid-name)
+sample_code.py:31:8: C0103: Attribute name "Name" doesn't conform to snake_case naming style (invalid-name)
+sample_code.py:30:23: C0103: Argument name "Name" doesn't conform to snake_case naming style (invalid-name)
+sample_code.py:33:4: C0116: Missing function or method docstring (missing-function-docstring)
+sample_code.py:29:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+sample_code.py:3:0: W0611: Unused import os (unused-import)
+sample_code.py:4:0: W0611: Unused import sys (unused-import)
+
+-----------------------------------
+Your code has been rated at 4.81/10
+

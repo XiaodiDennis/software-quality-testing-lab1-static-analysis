@@ -1,0 +1,17 @@
+FINALIZATION CHECKLIST - Xiaodi Wang, KP-44i
+
+1. On macOS, open Terminal and go to this folder.
+2. Create/activate a virtual environment and install requirements.txt.
+3. Run: ./run_analysis.sh
+4. Confirm that these files contain REAL local outputs rather than an installation notice:
+   - reports/original/pylint_report.txt
+   - reports/original/flake8_report.txt
+   - reports/original/bandit_report.txt
+5. Confirm reports/environment_and_versions.txt exists.
+6. Open reports/original/static_analysis_report.html and reports/fixed/static_analysis_report.html.
+7. If required by the teacher, take screenshots of Terminal/HTML output after the local run.
+8. Submit the source files, reports, and Lab_Report_Xiaodi_Wang.pdf (DOCX may also be included).
+9. Optionally push the folder to a public GitHub repository and include the repository URL.
+
+Important: the prepared sandbox could not install Pylint/Flake8/Bandit from the Internet.
+Run step 3 locally before submitting so the third-party reports are genuine.

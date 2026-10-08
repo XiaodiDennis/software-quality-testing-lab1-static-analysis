@@ -1,0 +1,6 @@
+BUILT-IN STATIC ANALYSIS REPORT
+==================================
+
+L029 [INFO   ] D001: Function '__init__' has no docstring
+
+Total issues: 1

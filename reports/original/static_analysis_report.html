@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang='en'><head><meta charset='utf-8'><title>Static Analysis Report</title>
+<style>body{font-family:Arial,sans-serif;max-width:1000px;margin:40px auto;line-height:1.5}table{border-collapse:collapse;width:100%}th,td{border:1px solid #bbb;padding:8px;text-align:left}th{background:#eee}code{background:#f5f5f5;padding:2px 4px}</style></head>
+<body><h1>Static Analysis Report</h1><p><strong>File:</strong> sample_code.py</p>
+<p><strong>Built-in issues:</strong> 14; counts by severity: {&#x27;warning&#x27;: 6, &#x27;high&#x27;: 2, &#x27;info&#x27;: 5, &#x27;medium&#x27;: 1}</p>
+<h2>External tool status</h2><ul><li>pylint: available</li><li>flake8: available</li><li>bandit: available</li></ul>
+<h2>Detected issues</h2><table><thead><tr><th>Line</th><th>Severity</th><th>Code</th><th>Message</th></tr></thead><tbody><tr><td>3</td><td>warning</td><td>F401</td><td>Imported name &#x27;os&#x27; is unused</td></tr>
+<tr><td>4</td><td>warning</td><td>F401</td><td>Imported name &#x27;sys&#x27; is unused</td></tr>
+<tr><td>8</td><td>high</td><td>S001</td><td>Hard-coded password-like string</td></tr>
+<tr><td>11</td><td>info</td><td>D001</td><td>Function &#x27;CalculateTotal&#x27; has no docstring</td></tr>
+<tr><td>11</td><td>warning</td><td>N001</td><td>Function name &#x27;CalculateTotal&#x27; is not snake_case</td></tr>
+<tr><td>13</td><td>warning</td><td>F841</td><td>Local variable appears intentionally unused</td></tr>
+<tr><td>17</td><td>warning</td><td>E501</td><td>Line too long (168 &gt; 88 characters)</td></tr>
+<tr><td>21</td><td>info</td><td>D001</td><td>Function &#x27;choose_token&#x27; has no docstring</td></tr>
+<tr><td>22</td><td>medium</td><td>S003</td><td>Pseudo-random generator used where security-sensitive use may require secrets</td></tr>
+<tr><td>25</td><td>info</td><td>D001</td><td>Function &#x27;run_command&#x27; has no docstring</td></tr>
+<tr><td>26</td><td>high</td><td>S002</td><td>subprocess.run(..., shell=True) may allow command injection</td></tr>
+<tr><td>29</td><td>warning</td><td>N002</td><td>Class name &#x27;useraccount&#x27; is not PascalCase</td></tr>
+<tr><td>30</td><td>info</td><td>D001</td><td>Function &#x27;__init__&#x27; has no docstring</td></tr>
+<tr><td>33</td><td>info</td><td>D001</td><td>Function &#x27;display&#x27; has no docstring</td></tr></tbody></table>
+<p>Raw outputs are stored as <code>pylint_report.txt</code>, <code>flake8_report.txt</code>, and <code>bandit_report.txt</code>.</p></body></html>

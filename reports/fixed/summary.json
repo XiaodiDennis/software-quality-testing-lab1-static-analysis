@@ -1,0 +1,30 @@
+{
+  "source_file": "fixed_sample_code.py",
+  "built_in_issue_count": 1,
+  "issues": [
+    {
+      "tool": "builtin",
+      "severity": "info",
+      "line": 29,
+      "code": "D001",
+      "message": "Function '__init__' has no docstring"
+    }
+  ],
+  "tools": [
+    {
+      "tool": "pylint",
+      "available": true,
+      "returncode": 8
+    },
+    {
+      "tool": "flake8",
+      "available": true,
+      "returncode": 0
+    },
+    {
+      "tool": "bandit",
+      "available": true,
+      "returncode": 1
+    }
+  ]
+}

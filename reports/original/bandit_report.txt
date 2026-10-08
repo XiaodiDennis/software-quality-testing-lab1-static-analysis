@@ -1,0 +1,68 @@
+Run started:2026-10-08 21:24:51.879478+00:00
+
+Test results:
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: /Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:5:0
+4	import sys
+5	import subprocess
+6	import random
+
+--------------------------------------------------
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: 'admin123'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html
+   Location: /Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:8:11
+7	
+8	PASSWORD = "admin123"
+9	
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: /Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:22:11
+21	def choose_token():
+22	    return random.randint(1000, 9999)
+23	
+
+--------------------------------------------------
+>> Issue: [B602:subprocess_popen_with_shell_equals_true] subprocess call with shell=True identified, security issue.
+   Severity: High   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b602_subprocess_popen_with_shell_equals_true.html
+   Location: /Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:26:4
+25	def run_command(user_input):
+26	    subprocess.run("echo " + user_input, shell=True, check=False)
+27	
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 28
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 3
+		Medium: 0
+		High: 1
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 1
+		High: 3
+Files skipped (0):
+
+--- STDERR ---
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.10.14

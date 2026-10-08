@@ -1,0 +1,121 @@
+{
+  "source_file": "sample_code.py",
+  "built_in_issue_count": 14,
+  "issues": [
+    {
+      "tool": "builtin",
+      "severity": "warning",
+      "line": 3,
+      "code": "F401",
+      "message": "Imported name 'os' is unused"
+    },
+    {
+      "tool": "builtin",
+      "severity": "warning",
+      "line": 4,
+      "code": "F401",
+      "message": "Imported name 'sys' is unused"
+    },
+    {
+      "tool": "builtin",
+      "severity": "high",
+      "line": 8,
+      "code": "S001",
+      "message": "Hard-coded password-like string"
+    },
+    {
+      "tool": "builtin",
+      "severity": "info",
+      "line": 11,
+      "code": "D001",
+      "message": "Function 'CalculateTotal' has no docstring"
+    },
+    {
+      "tool": "builtin",
+      "severity": "warning",
+      "line": 11,
+      "code": "N001",
+      "message": "Function name 'CalculateTotal' is not snake_case"
+    },
+    {
+      "tool": "builtin",
+      "severity": "warning",
+      "line": 13,
+      "code": "F841",
+      "message": "Local variable appears intentionally unused"
+    },
+    {
+      "tool": "builtin",
+      "severity": "warning",
+      "line": 17,
+      "code": "E501",
+      "message": "Line too long (168 > 88 characters)"
+    },
+    {
+      "tool": "builtin",
+      "severity": "info",
+      "line": 21,
+      "code": "D001",
+      "message": "Function 'choose_token' has no docstring"
+    },
+    {
+      "tool": "builtin",
+      "severity": "medium",
+      "line": 22,
+      "code": "S003",
+      "message": "Pseudo-random generator used where security-sensitive use may require secrets"
+    },
+    {
+      "tool": "builtin",
+      "severity": "info",
+      "line": 25,
+      "code": "D001",
+      "message": "Function 'run_command' has no docstring"
+    },
+    {
+      "tool": "builtin",
+      "severity": "high",
+      "line": 26,
+      "code": "S002",
+      "message": "subprocess.run(..., shell=True) may allow command injection"
+    },
+    {
+      "tool": "builtin",
+      "severity": "warning",
+      "line": 29,
+      "code": "N002",
+      "message": "Class name 'useraccount' is not PascalCase"
+    },
+    {
+      "tool": "builtin",
+      "severity": "info",
+      "line": 30,
+      "code": "D001",
+      "message": "Function '__init__' has no docstring"
+    },
+    {
+      "tool": "builtin",
+      "severity": "info",
+      "line": 33,
+      "code": "D001",
+      "message": "Function 'display' has no docstring"
+    }
+  ],
+  "tools": [
+    {
+      "tool": "pylint",
+      "available": true,
+      "returncode": 28
+    },
+    {
+      "tool": "flake8",
+      "available": true,
+      "returncode": 1
+    },
+    {
+      "tool": "bandit",
+      "available": true,
+      "returncode": 1
+    }
+  ]
+}

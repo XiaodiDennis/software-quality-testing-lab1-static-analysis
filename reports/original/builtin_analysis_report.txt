@@ -1,0 +1,19 @@
+BUILT-IN STATIC ANALYSIS REPORT
+==================================
+
+L003 [WARNING] F401: Imported name 'os' is unused
+L004 [WARNING] F401: Imported name 'sys' is unused
+L008 [HIGH   ] S001: Hard-coded password-like string
+L011 [INFO   ] D001: Function 'CalculateTotal' has no docstring
+L011 [WARNING] N001: Function name 'CalculateTotal' is not snake_case
+L013 [WARNING] F841: Local variable appears intentionally unused
+L017 [WARNING] E501: Line too long (168 > 88 characters)
+L021 [INFO   ] D001: Function 'choose_token' has no docstring
+L022 [MEDIUM ] S003: Pseudo-random generator used where security-sensitive use may require secrets
+L025 [INFO   ] D001: Function 'run_command' has no docstring
+L026 [HIGH   ] S002: subprocess.run(..., shell=True) may allow command injection
+L029 [WARNING] N002: Class name 'useraccount' is not PascalCase
+L030 [INFO   ] D001: Function '__init__' has no docstring
+L033 [INFO   ] D001: Function 'display' has no docstring
+
+Total issues: 14

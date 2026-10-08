@@ -1,0 +1,4 @@
+/Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:3:1: F401 'os' imported but unused
+/Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:4:1: F401 'sys' imported but unused
+/Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:13:5: F841 local variable 'unused_value' is assigned to but never used
+/Users/hsiao/Downloads/KP44i_SQT_Lab1_Xiaodi_Wang/sample_code.py:17:80: E501 line too long (168 > 79 characters)

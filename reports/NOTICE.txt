@@ -1,0 +1,5 @@
+The reports in this prepared package were generated in a restricted sandbox.
+The built-in AST analysis is real; Pylint, Flake8 and Bandit were unavailable here.
+Before submission, run ./run_analysis.sh on the student's macOS computer after
+installing requirements.txt. This will replace the raw tool reports with genuine
+local Pylint/Flake8/Bandit output and create environment_and_versions.txt.

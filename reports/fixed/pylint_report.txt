@@ -1,0 +1,6 @@
+************* Module fixed_sample_code
+fixed_sample_code.py:26:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+-----------------------------------
+Your code has been rated at 9.55/10
+
